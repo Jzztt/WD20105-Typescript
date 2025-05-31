@@ -4,6 +4,7 @@ import CoreType from "./components/CoreType";
 import ListProduct from "./components/ListProduct";
 import FormCreateProduct from "./components/FormCreateProduct";
 import ClientLayout from "./Layouts/ClientLayout";
+import FormUpdateProduct from "./components/FormUpdateProduct";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/core-type" element={<CoreType />} />
           <Route path="/products" element={<ListProduct />} />
           <Route path="/product-create" element={<FormCreateProduct />} />
+          <Route path="/update-product/:id" element={<FormUpdateProduct/>} />
         </Route>
       </Routes>
     </>
