@@ -6,6 +6,7 @@ import FormCreateProduct from "./components/FormCreateProduct";
 import ClientLayout from "./Layouts/ClientLayout";
 import FormUpdateProduct from "./components/FormUpdateProduct";
 import Register from "./components/Register";
+import Login from "./components/Login";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/update-product/:id" element={<FormUpdateProduct/>} />
         </Route>
         <Route path="/register" element={<Register/>}/>
+        <Route path="/login" element={<Login/>}/>
       </Routes>
     </>
   );
